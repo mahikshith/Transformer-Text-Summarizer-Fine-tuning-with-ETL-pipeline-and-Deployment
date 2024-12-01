@@ -1,0 +1,32 @@
+2024-12-01 18:15:20,087 [INFO] Creating directory; .github\workflows for the file: .gitkeep
+2024-12-01 18:15:20,103 [INFO] Creating empty file: .github\workflows\.gitkeep
+2024-12-01 18:15:20,103 [INFO] Creating directory; src\Text_summarizer for the file: __init__.py
+2024-12-01 18:15:20,103 [INFO] Creating empty file: src\Text_summarizer\__init__.py
+2024-12-01 18:15:20,103 [INFO] Creating directory; src\Text_summarizer\components for the file: __init__.py
+2024-12-01 18:15:20,103 [INFO] Creating empty file: src\Text_summarizer\components\__init__.py
+2024-12-01 18:15:20,103 [INFO] Creating directory; src\Text_summarizer\utils for the file: __init__.py
+2024-12-01 18:15:20,103 [INFO] Creating empty file: src\Text_summarizer\utils\__init__.py
+2024-12-01 18:15:20,122 [INFO] Creating directory; src\Text_summarizer\utils for the file: common.py
+2024-12-01 18:15:20,122 [INFO] Creating empty file: src\Text_summarizer\utils\common.py
+2024-12-01 18:15:20,127 [INFO] Creating directory; src\Text_summarizer\logging for the file: __init__.py
+2024-12-01 18:15:20,128 [INFO] Creating empty file: src\Text_summarizer\logging\__init__.py
+2024-12-01 18:15:20,128 [INFO] Creating directory; src\Text_summarizer\config for the file: __init__.py
+2024-12-01 18:15:20,133 [INFO] Creating empty file: src\Text_summarizer\config\__init__.py
+2024-12-01 18:15:20,135 [INFO] Creating directory; src\Text_summarizer\config for the file: configuration.py
+2024-12-01 18:15:20,137 [INFO] Creating empty file: src\Text_summarizer\config\configuration.py
+2024-12-01 18:15:20,138 [INFO] Creating directory; src\Text_summarizer\pipeline for the file: __init__.py
+2024-12-01 18:15:20,140 [INFO] Creating empty file: src\Text_summarizer\pipeline\__init__.py
+2024-12-01 18:15:20,140 [INFO] Creating directory; src\Text_summarizer\entity for the file: __init__.py
+2024-12-01 18:15:20,152 [INFO] Creating empty file: src\Text_summarizer\entity\__init__.py
+2024-12-01 18:15:20,155 [INFO] Creating directory; src\Text_summarizer\constants for the file: __init__.py
+2024-12-01 18:15:20,155 [INFO] Creating empty file: src\Text_summarizer\constants\__init__.py
+2024-12-01 18:15:20,161 [INFO] Creating directory; config for the file: config.yaml
+2024-12-01 18:15:20,164 [INFO] Creating empty file: config\config.yaml
+2024-12-01 18:15:20,168 [INFO] Creating empty file: params.yaml
+2024-12-01 18:15:20,169 [INFO] Creating empty file: app.py
+2024-12-01 18:15:20,169 [INFO] Creating empty file: main.py
+2024-12-01 18:15:20,169 [INFO] Creating empty file: Dockerfile
+2024-12-01 18:15:20,169 [INFO] requirements.txt is already exists
+2024-12-01 18:15:20,177 [INFO] Creating empty file: setup.py
+2024-12-01 18:15:20,177 [INFO] Creating directory; research for the file: text_summarizer_research.ipynb
+2024-12-01 18:15:20,177 [INFO] Creating empty file: research\text_summarizer_research.ipynb
