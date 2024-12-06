@@ -1,6 +1,8 @@
-# Text Summarizer - Fine-tuning and Deployment
+# Text Summarizer - Fine-tuning and Deployment - ETL pipeline
 
-This project implements an end-to-end text summarization solution using the Pegasus transformer model. It includes data preprocessing, model fine-tuning, evaluation, and deployment capabilities.
+This project implements an end-to-end Fine tuned text summarization solution using the Pegasus transformer model. It includes logging,  data preprocessing, model fine-tuning, evaluation pipelines from scratch  and deployment capabilities.
+
+ETL pipeline helps our code to be more modular , efficiently and reliably process , integrate data from various sources into a target system. We can automate the repetitive tasks , saving time and Handles increasing data volumes and complexity efficiently ensuring scalbility.
 
 ## Features
 
@@ -114,6 +116,17 @@ John: 👍 Will do!
 Summary: John and Kate planned to meet at 7pm at the cinema. John will buy tickets online and check for popcorn voucher deals.
 ```
 
+### workflow:
+
+1. update config.yaml
+2. update params.yaml
+3. update entity\__init__.py
+4. configuration manager
+5. update components - data ingestion , validaton , transformation , model trainer , model evaluator
+6. update pipeline - train , test , predict 
+7. update main.py
+8. frontend end to test and predict via api
+
 ### Training Configuration
 
 The model training can be configured through `params.yaml`:
@@ -210,10 +223,8 @@ NUM_BEAMS=8
 LENGTH_PENALTY=0.8
 ```
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Contributing
+
+My resources were limited while building this on my local system, Play around and change the params
 
 Contributions are welcome! Please feel free to submit a Pull Request.
