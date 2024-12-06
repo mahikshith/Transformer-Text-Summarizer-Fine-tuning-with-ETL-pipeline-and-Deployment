@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from pathlib import Path
+# ingestion 
 
 @dataclass
 class DataIngestionConfig:
@@ -7,6 +8,8 @@ class DataIngestionConfig:
     source_url : Path
     local_data_file : Path
     unzip_dir : Path
+
+# transformation
 
 @dataclass
 class DataTransformationConfig:
@@ -34,3 +37,13 @@ class ModelTrainerConfig:
     gradient_checkpointing : bool
     fp16 :bool              
     report_to : str  
+
+# evaluation
+
+@dataclass
+class ModelEvaluationConfig:
+    root_dir: Path
+    data_path: Path
+    model_path: Path
+    tokenizer_path: Path
+    metric_file: Path

@@ -2,6 +2,8 @@ from src.Text_summarizer.pipeline.data_ingestion_pipeline import DataIngestionTr
 from src.Text_summarizer.logging import logger
 from src.Text_summarizer.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.Text_summarizer.pipeline.model_trainer_pipeline import ModelTrainerTrainingPipeline
+from src.Text_summarizer.pipeline.model_evaluation_pipeline import ModelEvaluationTrainingPipeline
+
 
 # data ingestion training pipeline 
 """
@@ -24,7 +26,7 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e
-"""
+
 
 # model trainer training pipeline
 
@@ -33,6 +35,18 @@ try:
     logger.info(f"stage {stage_name} started ")
     model_trainer_training_pipeline = ModelTrainerTrainingPipeline()
     model_trainer_training_pipeline.model_trainer()
+    logger.info(f"stage {stage_name} completed ")
+except Exception as e:
+    logger.exception(e)
+    raise e
+"""
+# model evaluation training pipeline
+
+stage_name = "Model Evaluation Stage"
+try:
+    logger.info(f"stage {stage_name} started ")
+    model_evaluation_training_pipeline = ModelEvaluationTrainingPipeline()
+    model_evaluation_training_pipeline.model_evaluation()
     logger.info(f"stage {stage_name} completed ")
 except Exception as e:
     logger.exception(e)

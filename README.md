@@ -8,5 +8,5 @@
 4. configuration manager
 5. update components - data ingestion , validaton , transformation , model trainer , model evaluator
 6. update pipeline - train , test , predict 
-7. update app.py
+7. update main.py
 8. frontend end to test and predict via api

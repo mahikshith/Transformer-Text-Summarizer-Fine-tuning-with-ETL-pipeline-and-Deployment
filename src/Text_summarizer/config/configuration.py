@@ -1,6 +1,6 @@
 from src.Text_summarizer.constants import *
 from src.Text_summarizer.utils.common import read_yaml, create_directories
-from src.Text_summarizer.entity import DataIngestionConfig , DataTransformationConfig, ModelTrainerConfig
+from src.Text_summarizer.entity import DataIngestionConfig , DataTransformationConfig, ModelTrainerConfig, ModelEvaluationConfig
 
 class ConfigurationManager:
     def __init__(
@@ -66,5 +66,21 @@ class ConfigurationManager:
             report_to = params.report_to
         )
         return model_trainer_config
+
+        # Evaluation : 
+
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        config = self.config.model_evaluation
+        # root directory    
+        create_directories([config.root_dir]) 
+        # return data ingestion config
+        model_evaluation_config = ModelEvaluationConfig(
+            root_dir = config.root_dir,
+            data_path = config.data_path,
+            model_path = config.model_path,
+            tokenizer_path = config.tokenizer_path,
+            metric_file = config.metric_file
+        )
+        return model_evaluation_config
 
     
