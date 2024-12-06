@@ -1,7 +1,6 @@
 transformers 
 transformers[sentencepiece]
 datasets
-sacrebleu
 rouge_score
 py7zr
 pandas
@@ -12,13 +11,13 @@ tqdm
 torch 
 matplotlib
 notebook
-boto3
+boto3    # use it when using AWS sagemaker
 mypy-boto3-s3
-python-box==6.0.2
-ensure==1.0.2
+python-box==6.0.2   # used to handle yaml file
+ensure==1.0.2       # used to correctlt handle the data type
 fastapi==0.78.0
-uvicorn==0.18.3
-Jinja2==3.1.2
+uvicorn==0.18.3    # acts as a server , handles the http request
+Jinja2==3.1.2     # used to create html file , starlette
 
 evaluate
 # accelarate
