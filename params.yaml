@@ -1,15 +1,15 @@
-key: "value"
-
-training:
-  epochs: 3
-  batch_size: 8
-  max_length: 512
-  summary_length: 150
-
-tokenizer:
-  max_input_length: 1024
-  max_target_length: 128
-
-model:
-  model_name: "t5-small"
-  learning_rate: 2e-5
+TrainingArguments:
+  # training parameters from Finetuned_text_summarizer.ipynb
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4      # Batch size per GPU/CPU
+  num_train_epochs: 1                # Number of training epochs
+  learning_rate: 0.00002             # Learning rate (2e-5 in decimal)
+  weight_decay: 0.01
+  logging_steps: 10
+  evaluation_strategy: "steps"
+  eval_steps: 500
+  save_steps: 1000000                # Changed from 1e6 to explicit number
+  gradient_accumulation_steps: 16
+  gradient_checkpointing: true
+  fp16: true                         # Enable mixed precision training to reduce memory usage
+  report_to: "none"                  # we can use wandb or tensorboard to see weights and biases

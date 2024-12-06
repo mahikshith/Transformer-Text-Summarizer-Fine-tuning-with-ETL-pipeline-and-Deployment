@@ -1,6 +1,6 @@
 from src.Text_summarizer.constants import *
 from src.Text_summarizer.utils.common import read_yaml, create_directories
-from src.Text_summarizer.entity import DataIngestionConfig ,DataTransformationConfig
+from src.Text_summarizer.entity import DataIngestionConfig , DataTransformationConfig, ModelTrainerConfig
 
 class ConfigurationManager:
     def __init__(
@@ -37,3 +37,34 @@ class ConfigurationManager:
                 tokenizer_name =  config.tokenizer_name
         )
         return data_transformation_config 
+
+        # trainer 
+
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config = self.config.model_trainer
+        params = self.params.TrainingArguments
+        # root directory
+        create_directories([config.root_dir])
+
+        # model trainer config
+        model_trainer_config = ModelTrainerConfig(
+            root_dir = config.root_dir,
+            data_path = config.data_path,
+            base_model = config.base_model,
+            per_device_train_batch_size = params.per_device_train_batch_size,
+            per_device_eval_batch_size = params.per_device_eval_batch_size,
+            num_train_epochs = params.num_train_epochs,
+            learning_rate = params.learning_rate,
+            weight_decay = params.weight_decay,
+            logging_steps = params.logging_steps,
+            evaluation_strategy = params.evaluation_strategy,
+            eval_steps = params.eval_steps,
+            save_steps = params.save_steps,
+            gradient_accumulation_steps = params.gradient_accumulation_steps,
+            gradient_checkpointing = params.gradient_checkpointing,
+            fp16 = params.fp16,
+            report_to = params.report_to
+        )
+        return model_trainer_config
+
+    
