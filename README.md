@@ -51,7 +51,7 @@ ETL pipeline helps our code to be more modular , efficiently and reliably proces
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/Fine-tuning-text-summarizer---end-to-end-deployment.git
-cd Fine-tuning-text-summarizer---end-to-end-deployment
+cd give_your_folder_name
 ```
 
 2. Install dependencies:
@@ -223,7 +223,30 @@ NUM_BEAMS=8
 LENGTH_PENALTY=0.8
 ```
 
-## Contributing
+### Example tested using Fast API and Model response :
+
+>Example :
+
+"""Git is designed to be efficient with storage. It doesn't store redundant copies of files, but rather stores differences between versions. This means that even large projects can have relatively small Git repositories.
+
+Factors Affecting Storage Usage:
+
+  Project Size and History: Larger projects with a longer history will naturally require more storage.
+    Number of Branches and Tags: Multiple branches and tags increase the repository's size.
+    File Size: Large files can significantly impact storage usage.
+
+Tips to Minimize Git Storage:
+
+  Use Git LFS for Large Files: Git Large File Storage (LFS) is designed to handle large files efficiently. It stores large files separately and tracks them in your Git repository.
+    Prune Remote Branches: Regularly remove remote branches that are no longer needed to reduce repository size.
+    Compress Repositories: Tools like git gc can help compress the repository and reclaim disk space"""
+
+>Model Response : 
+
+"""Git is designed to be efficient with storage .<n>It doesn't store redundant copies of files, but rather stores differences 
+between versions .<n>Even large projects can have relatively small Git repositories"""
+
+### Contributing
 
 My resources were limited while building this on my local system, Play around and change the params
 
