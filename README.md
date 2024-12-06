@@ -1,6 +1,6 @@
 # Text Summarizer - Fine-tuning and Deployment - ETL pipeline
 
-This project implements an end-to-end Fine tuned text summarization solution [NLP] using the Pegasus transformer model. It includes logging,  data preprocessing, model fine-tuning, evaluation pipelines from scratch  and deployment capabilities.
+This project implements an end-to-end Fine tuned text summarization [NLP task] using the Pegasus transformer model. It includes logging,  data preprocessing, model fine-tuning, evaluation pipelines from scratch  and deployment capabilities.
 
 ETL pipeline helps our code to be more modular , efficiently and reliably process , integrate data from various sources into a target system. We can automate the repetitive tasks , saving time and Handles increasing data volumes and complexity efficiently ensuring scalbility.
 
