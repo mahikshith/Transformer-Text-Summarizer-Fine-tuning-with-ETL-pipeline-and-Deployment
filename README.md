@@ -4,6 +4,7 @@ This project implements an end-to-end Fine tuned text summarization [NLP task] u
 
 ETL pipeline helps our code to be more modular , efficiently and reliably process , integrate data from various sources into a target system. We can automate the repetitive tasks , saving time and Handles increasing data volumes and complexity efficiently ensuring scalbility.
 
+
 ## Features
 
 - Fine-tuning of Pegasus model for text summarization
