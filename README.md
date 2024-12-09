@@ -47,6 +47,32 @@ ETL pipeline helps our code to be more modular , efficiently and reliably proces
 - Transformers library
 - FastAPI (for deployment)
 
+### Setup-NVIDIA-GPU-for-Deep-Learning : 
+
+Step 1: Install the latest version of your GPUs driver : [https://www.nvidia.com/Download/index.aspx]
+
+Step 2: By default, C++ is not installed with Visual Studio, so make sure you select all of the C++ options [https://visualstudio.microsoft.com/vs/community/]
+
+Step 3: CUDA Toolkit : [https://developer.nvidia.com/cuda-toolkit-archive]
+
+Step 4: cuDNN : [https://developer.nvidia.com/rdp/cudnn-archive]
+
+Step 5: Install PyTorch [https://pytorch.org/get-started/locally/]
+
+Finally run the following script to test your GPU
+
+import torch
+
+print("Number of GPU: ", torch.cuda.device_count())
+
+print("GPU Name: ", torch.cuda.get_device_name())
+
+> Checking for cuda : 
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+print('Using device:', device)
+
 ### Installation
 
 1. Clone the repository:
