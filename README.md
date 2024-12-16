@@ -296,7 +296,7 @@ between versions .<n>Even large projects can have relatively small Git repositor
 
 5. Lauch your docker image in EC2
 
-### Policy:
+### IAM ROLE Policy:
 
 1. AmazonEC2ContainerRegistryFullAccess
 
