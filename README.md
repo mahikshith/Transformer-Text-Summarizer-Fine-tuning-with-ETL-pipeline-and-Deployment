@@ -1,4 +1,4 @@
-# Text Summarizer - Fine-tuning and Deployment - ETL pipeline
+# Text Summarizer - Fine-tuning and Deployment - ETL pipeline + AWS + CI / CD
 
 This project implements an end-to-end Fine tuned text summarization [NLP task] using the Pegasus transformer model. It includes logging,  data preprocessing, model fine-tuning, evaluation pipelines from scratch  and deployment capabilities.
 
